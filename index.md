@@ -3,7 +3,7 @@ layout: default
 title: Student Blog
 ---
 
-## Kevin's Page
+## Kevin Du's Page
 
 Go to my [Github account](https://github.com/DasMoge124) !!
 
