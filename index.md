@@ -5,6 +5,7 @@ title: Student Blog
 
 ## Kevin Du's Page
 
+Greetings fellow visitor. Welcome to my github page.
 Go to my [Github account](https://github.com/DasMoge124) !!!
 
 ## Overview of Hacks, Study and Tangibles
