@@ -14,5 +14,7 @@ Learning outcome. Building a personal and running GitHub Pages.
 - Monday: Live review of Tools and GitHub.
 - Tuesday through Thursday: Tech Talks and work.
 - Wednesday: Code, Code, Coding
+
 ### My progress:
-Making a github page was challenging at first. Despite having experience in linux, python, and html before, I wasn't that familiar with the md files.
+Here was my progress:
+- Making a github page was challenging at first. Despite having experience in linux, python, and html before, I wasn't that familiar with the md files.
