@@ -17,4 +17,5 @@ Learning outcome. Building a personal and running GitHub Pages.
 
 ### My progress:
 Here was my progress:
-- Making a github page was challenging at first. Despite having experience in linux, python, and html before, I wasn't that familiar with the md files.
+- Making a github page was challenging at first. Despite having experience in linux, python, and html before, I wasn't that familiar with the md files and I spent some time struggling on running all the commands
+- I did have to ask some of my teammates during class to help me fix some errors I encountered. Sometimes, it was just me not saving the file without knowing it.
