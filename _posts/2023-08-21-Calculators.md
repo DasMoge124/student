@@ -1,11 +1,11 @@
 ---
-title: JS Calculator
+toc: true
 comments: true
-layout: default
-description: A common way to become familiar with a language is to build a calculator.  This calculator shows off button with actions.
-categories: [C7.0]
-courses: { csse: {week: 8}, csp: {week: 4, categories: [2.C]}, csa: {week: 1} }
-type: ccc
+layout: post
+title: Calculator
+description: This is my first Calculator :)
+type: hacks
+courses: { csse: {week: 1}, csp: {week: 1, categories: [4.A]}, csa: {week: 0} }
 ---
 
 <!-- 
