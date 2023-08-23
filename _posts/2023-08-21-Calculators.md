@@ -100,6 +100,8 @@ HTML implementation of the calculator.
       <div class="calculator-number">6</div>
       <div>| |</div>
       <div class="calculator-operation">-</div>
+      <div>| |</div>
+      <div class="calculator-operation">L</div>
       <div>|</div>
     </div>
     <!-- Row 3 -->
@@ -210,6 +212,9 @@ function calculate (first, second) { // function to calculate the result of the 
             break;
         case "^":
             result = first ** second;
+            break;
+        case "L":
+            result = Math.log(first)/Math.log(second);
             break;
         default: 
             break;
