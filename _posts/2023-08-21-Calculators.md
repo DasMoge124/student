@@ -50,28 +50,34 @@ HTML implementation of the calculator.
 <!-- Add a container for the animation -->
 <div id="animation">
   <div class="calculator-container">
-      <!--result-->
-      <div class="calculator-output" id="output">0</div>
-      <!--row 1-->
+    <!-- Row 1 -->
+    <div class="calculator-row">
       <div class="calculator-number">1</div>
       <div class="calculator-number">2</div>
       <div class="calculator-number">3</div>
       <div class="calculator-operation">+</div>
-      <!--row 2-->
+    </div>
+    <!-- Row 2 -->
+    <div class="calculator-row">
       <div class="calculator-number">4</div>
       <div class="calculator-number">5</div>
       <div class="calculator-number">6</div>
       <div class="calculator-operation">-</div>
-      <!--row 3-->
+    </div>
+    <!-- Row 3 -->
+    <div class="calculator-row">
       <div class="calculator-number">7</div>
       <div class="calculator-number">8</div>
       <div class="calculator-number">9</div>
       <div class="calculator-operation">*</div>
-      <!--row 4-->
+    </div>
+    <!-- Row 4 -->
+    <div class="calculator-row">
       <div class="calculator-clear">A/C</div>
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
+    </div>
   </div>
 </div>
 
