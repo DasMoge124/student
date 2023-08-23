@@ -45,11 +45,37 @@ HTML implementation of the calculator.
     display: flex;
     align-items: center;
   }
+  .calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .calculator-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+  .calculator-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
 </style>
 
 <!-- Add a container for the animation -->
 <div id="animation">
   <div class="calculator-container">
+    <div class="calculator-output" id="output">0</div>
     <!-- Row 1 -->
     <div class="calculator-row">
       <div class="calculator-number">1</div>
