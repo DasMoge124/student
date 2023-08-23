@@ -214,7 +214,7 @@ function calculate (first, second) { // function to calculate the result of the 
             result = first ** second;
             break;
         case "L":
-            result = Math.log(first)/Math.log(second);
+            result = Math.log(first);
             break;
         default: 
             break;
