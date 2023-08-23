@@ -55,20 +55,20 @@ HTML implementation of the calculator.
   .calculator-row {
     display: flex;
     justify-content: center;
-    margin: 5px 0;
+    margin: 10px 0; /* Increase margin for more spacing */
   }
 
   .calculator-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 60px; /* Slightly wider buttons */
+    height: 60px; /* Slightly taller buttons */
     background-color: #f2f2f2;
     border-radius: 50%;
     font-size: 18px;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 0 8px; /* Increased horizontal margin */
   }
 </style>
 
