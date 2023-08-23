@@ -62,7 +62,7 @@ HTML implementation of the calculator.
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px; /* Slightly wider buttons */
+    width: 180px; /* Slightly wider buttons */
     height: 60px; /* Slightly taller buttons */
     background-color: #f2f2f2;
     border-radius: 50%;
