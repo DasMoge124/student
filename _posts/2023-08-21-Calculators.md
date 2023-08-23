@@ -78,6 +78,7 @@ HTML implementation of the calculator.
     <div class="calculator-output" id="output">0</div>
     <!-- Row 1 -->
     <div class="calculator-row">
+      <div>|</div>
       <div class="calculator-number">1</div>
       <div>| |</div>
       <div class="calculator-number">2</div>
@@ -85,9 +86,13 @@ HTML implementation of the calculator.
       <div class="calculator-number">3</div>
       <div>| |</div>
       <div class="calculator-operation">+</div>
+      <div>| |</div>
+      <div class="calculator-operation">^</div>
+      <div>|</div>
     </div>
     <!-- Row 2 -->
     <div class="calculator-row">
+      <div>|</div>
       <div class="calculator-number">4</div>
       <div>| |</div>
       <div class="calculator-number">5</div>
@@ -95,9 +100,11 @@ HTML implementation of the calculator.
       <div class="calculator-number">6</div>
       <div>| |</div>
       <div class="calculator-operation">-</div>
+      <div>|</div>
     </div>
     <!-- Row 3 -->
     <div class="calculator-row">
+      <div>|</div>
       <div class="calculator-number">7</div>
       <div>| |</div>
       <div class="calculator-number">8</div>
@@ -107,16 +114,19 @@ HTML implementation of the calculator.
       <div class="calculator-operation">*</div>
       <div>| |</div>
       <div class="calculator-operation">/</div>
+      <div>|</div>
     </div>
     <!-- Row 4 -->
     <div class="calculator-row">
+      <div>|</div>
       <div class="calculator-clear">A/C</div>
-      <div>||</div>
+      <div>| |</div>
       <div class="calculator-number">0</div>
-      <div>||</div>
+      <div>| |</div>
       <div class="calculator-number">.</div>
-      <div>||</div>
+      <div>| |</div>
       <div class="calculator-equals">=</div>
+      <div>|</div>
     </div>
   </div>
 </div>
@@ -197,6 +207,9 @@ function calculate (first, second) { // function to calculate the result of the 
             break;
         case "/":
             result = first / second;
+            break;
+        case "^":
+            result = first ** second;
             break;
         default: 
             break;
