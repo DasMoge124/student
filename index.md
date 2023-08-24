@@ -9,7 +9,7 @@ Greetings fellow visitor. Welcome to my github page.
 
 Go to my [Github account](https://github.com/DasMoge124) !!!
 Check out [my blogs](https://dasmoge124.github.io/student/blogs)!!
-To navigate to other pages, click the buttons underneath the ./CompSci Blogs
+To navigate to other pages, click the buttons underneath the ./CompSci Blogs!!
 ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
 
