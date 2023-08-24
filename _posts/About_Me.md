@@ -1,2 +1,17 @@
+---
+comments: True
+layout: post
+title: About me
+description: About me
+type: hacks
+courses: {'csse': {'week': 1}, 'csp': {'week': 1}, 'csa': {'week': 0}}
+categories: ['C4.1']
+---
+
+### About Me
 I was born in California
-I was a Life Scout in Boy Scouts
+I am a current Life Scout in Boy Scouts. Earned the 25 night camper award
+I am the Del Norte Chess Club President, CTF Club Vice President, and Coding Club Vice President
+I run Track and Field
+I have an older brother who is currently in Abraxas High School
+Sometimes at home when I'm bored is make music through Minecraft Noteblock Studio
