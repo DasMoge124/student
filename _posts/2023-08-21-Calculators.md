@@ -101,7 +101,7 @@ HTML implementation of the calculator.
       <div>| |</div>
       <div class="calculator-operation">-</div>
       <div>| |</div>
-      <div class="calculator-operation">Ln</div>
+      <div class="calculator-operation">Log</div>
       <div>|</div>
     </div>
     <!-- Row 3 -->
@@ -213,7 +213,7 @@ function calculate (first, second) { // function to calculate the result of the 
         case "^":
             result = first ** second;
             break;
-        case "Ln":
+        case "Log":
             result = Math.log(first);
             break;
         default: 
