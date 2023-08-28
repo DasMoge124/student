@@ -1,6 +1,6 @@
 ---
 layout: schedule
-title: Student Blog
+title: Lab Notebook
 ---
 
 | Week | Topic | Tangibles | Lab Notes |
