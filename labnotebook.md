@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: schedule
 title: Student Blog
 ---
 
