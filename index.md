@@ -23,3 +23,6 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 <p class="center1">
   <img src="{{ site.baseurl }}/images/Linux knowledge.png" width=250px/>
 </p>
+<p class="center1">
+  <img src="{{ site.baseurl }}/images/minecraft-zombie-riding-a-pig.gif" width=250px/>
+</p>
