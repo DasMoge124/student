@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: GitHub Pages
+title: My GitHub Pages
 description: This is my first blog :)
 type: plans
 courses: { csse: {week: 1}, csp: {week: 1, categories: [4.A]}, csa: {week: 0} }
