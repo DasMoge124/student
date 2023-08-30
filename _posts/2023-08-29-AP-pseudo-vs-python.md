@@ -2,9 +2,9 @@
 toc: true
 comments: true
 layout: post
-title: College Board Pseudo Code
+title: College Board Pseudo  vs Python Code
 description: The College Board testing language is Pseudo Code.  Pseudo mean kind-of language that we will compare to Python.
-courses: {'csa': {'week': 2}}
+courses: {csa: {'week': 2}}
 type: hacks
 ---
 
