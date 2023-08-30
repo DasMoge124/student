@@ -1,10 +1,10 @@
 ---
-toc: True
-comments: True
+toc: true
+comments: true
 layout: post
 title: College Board Pseudo Code
 description: The College Board testing language is Pseudo Code.  Pseudo mean kind-of language that we will compare to Python.
-courses: {'csp': {'week': 0}}
+courses: {'csa': {'week': 0}}
 type: hacks
 ---
 
@@ -79,3 +79,12 @@ if (a ===  b){
     console.log("A = B!")
 }
 ```
+```python
+# Python code if block to match Pseudo Code
+total = 0 #sets up the initial total as 0
+for i in range(1, 101): #does the procedure
+    total = total + i #increments total by i
+print(total) #prints final result
+```
+
+    5050
