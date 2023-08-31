@@ -5,8 +5,8 @@ description: A Tech Talk on Linux and the Bash shell.
 toc: true
 comments: true
 categories: [5.A, C4.1]
-courses: { csse: {week: 1}, csp: {week: 0, categories: [6.B]}, csa: {week: 0} }
-type: devops
+courses: { csse: {week: 1}, csp: {week: 0, categories: [6.B]}, csa: {week: 1} }
+type: hacks
 ---
 ## Bash Tutorial
 > A brief overview of Bash, on your way to becoming a Linux expert.  When a computer boots up, a kernel (MacOS, Windows, Linux) is started.  This kernel provides a shell that allows user to interact with a most basic set of commands.  Typically, the casual user will not interact with the shell as a Desktop User Interface is started by the computer boot up process.  To activate a shell directly, users will run a "terminal" through the Desktop. VS Code provides ability to activate "terminal" while in the IDE.
