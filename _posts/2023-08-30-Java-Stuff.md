@@ -7,6 +7,8 @@ courses: { csa: {week: 1}}
 categories: [C4.0]
 type: hacks
 ---
+#### A Bunch of Java Stuff
+
 ## Hello, World!
 This article shows the basic language structures and constructs of Java (aka anatomy).  In async order, it is critical to understand these examples and learn vocab for OOP and Creating Objects: 
 - [Object Oriented Programming](https://youtu.be/Wok4Xw_5cyY) 
