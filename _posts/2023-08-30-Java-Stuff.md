@@ -5,7 +5,7 @@ title: Java Stuff
 description: A progressive journey through Java basics starting with the classic "Hello, World!" example.
 courses: { csa: {week: 1}}
 categories: [C4.0]
-type: plans
+type: hacks
 ---
 ## Hello, World!
 This article shows the basic language structures and constructs of Java (aka anatomy).  In async order, it is critical to understand these examples and learn vocab for OOP and Creating Objects: 
