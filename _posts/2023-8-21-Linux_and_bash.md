@@ -663,4 +663,4 @@ Output is truncated. View as a scrollable element or open in a text editor. Adju
 - Name and create notes on some Linux commands you will use frequently: ls and cd (do go back to directory the current directory is in, do cd..)
 - Is there anything we use to verify tools we install? Review versions checks.
 - Is there anything we could verify with Anaconda?  or WSL?  
-- How would you update a repository?  Could you do that in script above? I would usually just update the repository through git commands and gui, like push then commit and just push again. But sometimes when necessary, I use the script.
+- How would you update a repository?  Could you do that in script above? I would usually just update the repository through git commands and gui, like push then commit and just push again. But sometimes when necessary, I will use the script.
