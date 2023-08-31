@@ -7,7 +7,7 @@ type: tangibles
 courses: {'csse': {'week': 1}, 'csp': {'week': 1}, csa: {'week': 2}}
 categories: ['C4.1']
 ---
-## Summary
+## Summary of my accomplishments
 - Day 1: I had absolutely no idea what I was doing. But after collaborating with my group to help me out, I finally got the guidance I need.
 - Day 2: I started working on my project (aka my website), I had absolutely no idea what was going on. I encountered a bunch of errors
 - Day 3: Still had no idea what I was doing. I had to spend the weekends to figure out some of my errors.
