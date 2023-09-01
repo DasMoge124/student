@@ -16,3 +16,4 @@ categories: ['C4.1']
 - Day 6/7/8: STRESSED for my live review, because I never did it before. After finishing it, I was relieved after doing well
 - Day 9: Polished the website a bit more, removed some of the pages to set up a lab notebook
 - Day 10: looked at all of the hacks and did everything I can. Plus I added some java code that I made for a shopping simulation at a made up restaurant (IN-GET-OUT).
+- Day 11: I made a guess the number game which is kind of like higher or lower, but allows more attempts.
