@@ -1,7 +1,7 @@
 ---
 # this is YAML front matter
 layout: post
-title: Java Stuff
+title: Java Hello
 description: A progressive journey through Java basics starting with the classic "Hello, World!" example.
 courses: { csa: {week: 1}}
 categories: [C4.0]
