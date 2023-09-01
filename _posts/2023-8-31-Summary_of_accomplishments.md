@@ -17,3 +17,26 @@ categories: ['C4.1']
 - Day 9: Polished the website a bit more, removed some of the pages to set up a lab notebook
 - Day 10: looked at all of the hacks and did everything I can. Plus I added some java code that I made for a shopping simulation at a made up restaurant (IN-GET-OUT).
 - Day 11: I made a guess the number game which is kind of like higher or lower, but allows more attempts.
+- Day 12: Orlando and I are in progress of a java game. We brainstormed it very carefully. What we currently have down below. Not entirely finished, but we did brainstorm a lot on how this project will go.
+```java
+import java.util.*;
+public class Adventure_Capitalist {
+    String Item;
+    Integer price;
+    Integer Price;
+    public Adventure_Capitalist(String item, Integer cost, Integer purchase_number){
+        item = Item;
+        cost = price;
+        purchase_number = Price;
+    }
+    public static void main(String[] args){
+        Adventure_Capitalist lemonade = new Adventure_Capitalist("lemonade", 1,0);        Adventure_Capitalist lemonade = new Adventure_Capitalist("lemonade", 1);       Adventure_Capitalist lemonade = new Adventure_Capitalist("lemonade", 1);
+        Adventure_Capitalist pen  = new Adventure_Capitalist("pen", 10, 20);
+        Adventure_Capitalist car = new Adventure_Capitalist("car", 10000, 20000);
+        Adventure_Capitalist Scooters = new Adventure_Capitalist("Scooters", 500,1000);
+        System.out.println("Welcome to Adventure Capitalist!");
+        System.out.println("You have 3 minutes");
+        
+    }
+}
+```
