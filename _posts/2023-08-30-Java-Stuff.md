@@ -14,6 +14,7 @@ This article shows the basic language structures and constructs of Java (aka ana
 - [Object Oriented Programming](https://youtu.be/Wok4Xw_5cyY) 
 - [Creating Objects](https://youtu.be/C5Ks_u87Ltg)
 - [Calling Methods](https://youtu.be/CPE_lYGCw3A)
+
 ### Static example
 The class HelloStatic contains the classic "Hello, World!" message that is often used as an introduction to a programming language.  The "public static void main(String[] args)", or main method, is the default runtime method in Java and has a very specific and ordered definition (signature). 
 
