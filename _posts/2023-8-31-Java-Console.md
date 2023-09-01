@@ -129,7 +129,8 @@ public void rps(){
         scRPS.close();
     }
 ```
-- 
+- Tic Tac Toe Analysis
+
 ```java
 public void ticTacToe(){
         System.out.println("Tic Tac Toe");
