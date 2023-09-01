@@ -3,7 +3,7 @@ layout: default
 title: Student Blog
 ---
 
-## Kevin Du's Page
+## Kevin Du's Time Box
 
 Greetings fellow visitor. Welcome to my github page.
 
