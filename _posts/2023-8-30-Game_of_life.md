@@ -6,7 +6,7 @@ permalink: /frontend/life
 image: /images/game_of_life.svg
 tags: [javascript]
 courses: {csa: {week: 2}}
-type: hacks
+type: tangibles
 ---
 
 <style>
