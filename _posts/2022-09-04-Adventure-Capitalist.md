@@ -38,7 +38,6 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
         <h1>Adventure Capitalist Clicker</h1>
         <div class="money-container">
             <p>Money: <span id="money">0</span></p>
-            <p>highestScore: <span id="highestScore">0</span></p>
             <button id="click-button">Click!</button>
         </div>
         <div class="businesses">
@@ -52,8 +51,11 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
 </html>
 <script>
 // Helper function to set a cookie with a given name and value
-function setCookie(name, value) {
-    document.cookie = `${name}=${value}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 // Helper function to get the value of a cookie by name
 function getCookie(name) {
@@ -74,7 +76,7 @@ let business3Count = 0;
 let startTime = null;
 let endTime = null;
 let isGamePaused = false;
-let highestScore = parseInt(getCookie("highestScore")) || 0;
+let highestScore = parseInt(getCookie("highestScore"));
 const moneyDisplay = document.getElementById("money");
 const clickButton = document.getElementById("click-button");
 const business1Button = document.getElementById("business1");
@@ -140,7 +142,7 @@ function gameOver() {
     // Update the highest score if the current score is higher
     if (elapsedTimeInSeconds > highestScore) {
         highestScore = money;
-        setCookie("highestScore", highestScore, money);
+        setCookie("highestScore", money, 365);
     }
 }
 // Add an interval for passive income from businesses
