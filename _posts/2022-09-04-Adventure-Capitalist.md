@@ -140,7 +140,7 @@ function gameOver() {
     // Update the highest score if the current score is higher
     if (elapsedTimeInSeconds > highestScore) {
         highestScore = money;
-        setCookie("highestScore", highestScore);
+        setCookie("highestScore", highestScore, money);
     }
 }
 // Add an interval for passive income from businesses
