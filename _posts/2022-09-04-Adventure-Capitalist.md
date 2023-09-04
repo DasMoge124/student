@@ -2,8 +2,8 @@
 toc: true
 comments: true
 title: Adventure Capitalist
-layout: hacks
-description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
+layout: tangibles
+description: Its my pair showcase project 
 tags: [javascript]
 courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
 ---
