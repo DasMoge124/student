@@ -3,7 +3,7 @@ toc: true
 comments: true
 title: The Adventure Capitalist
 layout: tangibles
-description: Its my pair showcase project 
+description: Its my pair showcase project!
 tags: [javascript]
 courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
 ---
