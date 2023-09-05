@@ -38,7 +38,7 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
         <h1>Adventure Capitalist Clicker</h1>
         <div class="money-container">
             <p>Money: <span id="money">0</span></p>
-            <p>Highest Score: <span id="highestScore">0</span></p>
+            <p>Highest Money Earned: <span id="highest-score">0</span></p>
             <button id="click-button">Click!</button>
         </div>
         <div class="businesses">
@@ -85,6 +85,11 @@ const business2Button = document.getElementById("business2");
 const business3Button = document.getElementById("business3");
 const timerDisplay = document.getElementById("timer");
 const scoreDisplay = document.getElementById("score");
+const highestScoreDisplay = document.getElementById("highest-score");
+alert(highestScore);
+if (highestScore === null){
+    highestScore = 0;
+}
 clickButton.addEventListener("click", () => {
     if (!isGamePaused) {
         money += 1;
@@ -138,14 +143,16 @@ function updateTimer() {
 }
 function gameOver() {
     isGamePaused = true;
-    const elapsedTimeInSeconds = Math.floor((endTime - startTime) / 1000);
-    scoreDisplay.textContent = elapsedTimeInSeconds;
-    // Update the highest score if the current score is higher
-    if (elapsedTimeInSeconds > highestScore) {
-        highestScore = money;
-        setCookie("highestScore", money, 365);
-        alert("Your highest score is: " + money);
+    timerDisplay.textContent = "Game Over";
+    // Display the money earned during the session as the player's score
+    const sessionScore = money;
+    scoreDisplay.textContent = `Money Earned: $${sessionScore}`;
+    // Update the highest money earned if the current session's money is higher
+    if (money > highestScore) {
+        highestScoreDisplay.textContent = `$${money}`;
+        setCookie("highest-score", sessionScore);
     }
+    // Display the highest money earned to the player
 }
 // Add an interval for passive income from businesses
 setInterval(() => {
