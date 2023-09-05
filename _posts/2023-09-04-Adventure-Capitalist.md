@@ -25,7 +25,7 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
 </style>
 <html lang="en">
 <div class="timer-container">
-    <p>Time Elapsed: <span id="timer">0</span> seconds</p>
+    <h3>Time Left: <span id="timer">0</span> seconds</h3>
 </div>
 <head>
     <meta charset="UTF-8">
@@ -36,8 +36,9 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
 <body>
     <div class="container">
         <h1>Adventure Capitalist Clicker</h1>
+        <h2>Make as much money as possible within 3 minutes!</h2>
         <div class="money-container">
-            <p>Money: <span id="money">0</span></p>
+            <p>Money: $<span id="money">0</span></p>
             <button id="click-button">Click!</button>
         </div>
         <div class="businesses">
@@ -45,6 +46,10 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
             <button id="business2" class="business">Business 2 ($50)</button>
             <button id="business3" class="business">Business 3 ($100)</button>
         </div>
+        <div>
+        <img id="image" src="{{ site.baseurl }}/images/images.jpg"/>
+        </div>
+        <img src="{{ site.baseurl }}/images/200w.gif"/>
     </div>
     <script src="script.js"></script>
 </body>
@@ -90,7 +95,7 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+    alert("Welcome back to Adventure Capitalist " + user);
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
@@ -153,6 +158,7 @@ function updateTimer() {
 function gameOver() {
     isGamePaused = true;
     const elapsedTimeInSeconds = Math.floor((endTime - startTime) / 1000);
+    timerDisplay.textContent = "Time is up man! You have zero ";
 }
 // Add an interval for passive income from businesses
 setInterval(() => {
