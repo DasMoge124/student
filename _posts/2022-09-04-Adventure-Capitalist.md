@@ -51,6 +51,7 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
 </html>
 <script>
 // Helper function to set a cookie with a given name and value
+let congrats = "Make as much money as you can";
 let money = 0;
 let business1Count = 0;
 let business2Count = 0;
@@ -135,7 +136,7 @@ function updateMoneyDisplay() {
 function startTimer() {
     if (!startTime) {
         startTime = Date.now();
-        endTime = startTime + 180000; // 3 minutes
+        endTime = startTime + 10000; // 3 minutes
         setInterval(updateTimer, 1000);
     }
 }
@@ -152,8 +153,6 @@ function updateTimer() {
 function gameOver() {
     isGamePaused = true;
     const elapsedTimeInSeconds = Math.floor((endTime - startTime) / 1000);
-    scoreDisplay.textContent = elapsedTimeInSeconds;
-    alert("Congrats " + user + " for winning " + money);
 }
 // Add an interval for passive income from businesses
 setInterval(() => {
