@@ -1,9 +1,9 @@
 ---
 toc: true
 comments: true
-title: The Adventure Capitalist
-layout: tangibles
-description: Its my pair showcase project!
+title: Adventure Capitalist
+layout: hacks
+description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
 tags: [javascript]
 courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
 ---
@@ -38,7 +38,6 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
         <h1>Adventure Capitalist Clicker</h1>
         <div class="money-container">
             <p>Money: <span id="money">0</span></p>
-            <p>Highest Money Earned: <span id="highest-score">0</span></p>
             <button id="click-button">Click!</button>
         </div>
         <div class="businesses">
@@ -58,17 +57,30 @@ function setCookie(cname, cvalue, exdays) {
   let expires = "expires="+d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-// Helper function to get the value of a cookie by name
-function getCookie(name) {
-    const cookieName = `${name}=`;
-    const cookies = document.cookie.split(';');
-    for (let i = 0; i < cookies.length; i++) {
-        let cookie = cookies[i].trim();
-        if (cookie.indexOf(cookieName) === 0) {
-            return cookie.substring(cookieName.length, cookie.length);
-        }
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
     }
-    return null;
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
 }
 let money = 0;
 let business1Count = 0;
@@ -77,7 +89,7 @@ let business3Count = 0;
 let startTime = null;
 let endTime = null;
 let isGamePaused = false;
-let highestScore = parseInt(getCookie("highestScore"));
+let highestScore = parseInt(getCookie("highestScore")) || 0;
 const moneyDisplay = document.getElementById("money");
 const clickButton = document.getElementById("click-button");
 const business1Button = document.getElementById("business1");
@@ -85,11 +97,6 @@ const business2Button = document.getElementById("business2");
 const business3Button = document.getElementById("business3");
 const timerDisplay = document.getElementById("timer");
 const scoreDisplay = document.getElementById("score");
-const highestScoreDisplay = document.getElementById("highest-score");
-alert(highestScore);
-if (highestScore === null){
-    highestScore = 0;
-}
 clickButton.addEventListener("click", () => {
     if (!isGamePaused) {
         money += 1;
@@ -127,7 +134,7 @@ function updateMoneyDisplay() {
 function startTimer() {
     if (!startTime) {
         startTime = Date.now();
-        endTime = startTime + 10000; // 3 minutes
+        endTime = startTime + 180000; // 3 minutes
         setInterval(updateTimer, 1000);
     }
 }
@@ -143,16 +150,13 @@ function updateTimer() {
 }
 function gameOver() {
     isGamePaused = true;
-    timerDisplay.textContent = "Game Over";
-    // Display the money earned during the session as the player's score
-    const sessionScore = money;
-    scoreDisplay.textContent = `Money Earned: $${sessionScore}`;
-    // Update the highest money earned if the current session's money is higher
-    if (money > highestScore) {
-        highestScoreDisplay.textContent = `$${money}`;
-        setCookie("highest-score", sessionScore);
+    const elapsedTimeInSeconds = Math.floor((endTime - startTime) / 1000);
+    scoreDisplay.textContent = elapsedTimeInSeconds;
+    // Update the highest score if the current score is higher
+    if (elapsedTimeInSeconds > highestScore) {
+        highestScore = elapsedTimeInSeconds;
+        setCookie("highestScore", highestScore);
     }
-    // Display the highest money earned to the player
 }
 // Add an interval for passive income from businesses
 setInterval(() => {
@@ -161,4 +165,5 @@ setInterval(() => {
         updateMoneyDisplay();
     }
 }, 1000);
+
 </script>
