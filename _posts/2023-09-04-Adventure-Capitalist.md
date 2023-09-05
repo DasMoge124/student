@@ -1,7 +1,7 @@
 ---
 toc: true
 comments: true
-title: Adventure Capitalist
+title: The Adventure Capitalist
 layout: hacks
 description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
 tags: [javascript]
