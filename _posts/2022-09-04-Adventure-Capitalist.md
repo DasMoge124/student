@@ -66,6 +66,38 @@ const business2Button = document.getElementById("business2");
 const business3Button = document.getElementById("business3");
 const timerDisplay = document.getElementById("timer");
 const scoreDisplay = document.getElementById("score");
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+}
+checkCookie();
 clickButton.addEventListener("click", () => {
     if (!isGamePaused) {
         money += 1;
@@ -121,11 +153,7 @@ function gameOver() {
     isGamePaused = true;
     const elapsedTimeInSeconds = Math.floor((endTime - startTime) / 1000);
     scoreDisplay.textContent = elapsedTimeInSeconds;
-    // Update the highest score if the current score is higher
-    if (elapsedTimeInSeconds > highestScore) {
-        highestScore = elapsedTimeInSeconds;
-        setCookie("highestScore", highestScore);
-    }
+    alert("Congrats " + user + " for winning " + money);
 }
 // Add an interval for passive income from businesses
 setInterval(() => {
