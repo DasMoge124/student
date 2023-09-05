@@ -38,6 +38,7 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
         <h1>Adventure Capitalist Clicker</h1>
         <div class="money-container">
             <p>Money: <span id="money">0</span></p>
+            <p>Highest Score: <span id="highestScore">0</span></p>
             <button id="click-button">Click!</button>
         </div>
         <div class="businesses">
@@ -121,7 +122,7 @@ function updateMoneyDisplay() {
 function startTimer() {
     if (!startTime) {
         startTime = Date.now();
-        endTime = startTime + 180000; // 3 minutes
+        endTime = startTime + 10000; // 3 minutes
         setInterval(updateTimer, 1000);
     }
 }
@@ -143,6 +144,7 @@ function gameOver() {
     if (elapsedTimeInSeconds > highestScore) {
         highestScore = money;
         setCookie("highestScore", money, 365);
+        alert("Your highest score is: " + money);
     }
 }
 // Add an interval for passive income from businesses
