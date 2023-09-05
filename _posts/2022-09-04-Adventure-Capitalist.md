@@ -1,7 +1,7 @@
 ---
 toc: true
 comments: true
-title: Adventure Capitalist
+title: Adventure Capitalist!
 layout: tangibles
 description: Its my pair showcase project 
 tags: [javascript]
