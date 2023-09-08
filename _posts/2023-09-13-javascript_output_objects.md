@@ -1,11 +1,13 @@
 ---
 title: JS Output w/ Objects
+toc: True
 description: Quick launch into Variables, Functions, Arrays, Classes, Objects.
-layout: posts
-courses: { csse: {week: 5}, csp: {week: 3, categories: [1.A, 3.B]}, csa: {week: 3} }
+courses: {'csse': {'week': 3}, 'csp': {'week': 2, 'categories': ['3.A', '5.B']}, 'csa': {'week': 3}}
+categories: ['C3.0', 'C3.1', 'C4.1']
 type: hacks
-week: 4
 ---
+
+
 ## JavaScript and Jupyter references
 > JavaScript is the most important language you need to learn as a frontend developer.  Jupyter Notebooks is a convenient way to learn portions of the language without the overhead of creating a full Website.  Jupyter Notebooks have ChatGPT plugins to assist with design and troubleshooting problems.  This Notebook has colors on HTML pages that were designed with a dark mode background.
 
