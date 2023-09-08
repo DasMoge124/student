@@ -1,5 +1,5 @@
 ---
-title: JS Output w/ Objects
+title: JS Output W/ Objects
 toc: True
 description: Quick launch into Variables, Functions, Arrays, Classes, Objects.
 courses: {'csse': {'week': 3}, 'csp': {'week': 2, 'categories': ['3.A', '5.B']}, 'csa': {'week': 3}}
