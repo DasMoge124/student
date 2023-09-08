@@ -114,7 +114,6 @@ const searchInput = document.getElementById("search-input");
         { name: "Apple", networth: 150000},
         { name: "Google", networth: 900000},
         { name: "Bob", networth: 99999999},
-        { name: "T-Series", networth: 5};
     ];
 searchButton.addEventListener("click", function () {
     const searchTerm = searchInput.value.toLowerCase();
