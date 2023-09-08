@@ -4,8 +4,7 @@ comments: true
 title: The Adventure Capitalist
 layout: hacks
 description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
-tags: [javascript]
-courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
+courses: { csse: {week: 1}, csp: {week: 1, categories: [4.A]}, csa: {week: 3} }
 ---
 <style>
     body {
@@ -17,7 +16,7 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
         margin-top: 50px;
     }
     .money-container {
-        margin: 20px 0;
+        margin: 20px;
     }
     .business {
         margin: 10px;
@@ -46,18 +45,43 @@ courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 3} }
             <button id="business2" class="business">Business 2 ($50)</button>
             <button id="business3" class="business">Business 3 ($100)</button>
         </div>
-        <div>
+            <!-- Business search input -->
+    <label for="search-input">Search for businesses:</label>
+    <input type="text" id="search-input">
+    <button id="search-button">Search</button>
+    <!-- Display search results -->
+    <div id="results">
+        <h2>Search Results:</h2>
+        <table id="business-table">
+            <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Cost</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        <tbody id="business-list"></tbody>
+    </table>
+    </div>
+    <!-- Display the player's businesses -->
+    <div id="player-businesses">
+        <h2>Your Businesses:</h2>
+        <ul id="player-business-list"></ul>
+    </div>
+    <div>
         <img id="image" src="{{ site.baseurl }}/images/images.jpg"/>
         </div>
         <img src="{{ site.baseurl }}/images/200w.gif"/>
     </div>
     <script src="script.js"></script>
+    
 </body>
 </html>
 <script>
 // Helper function to set a cookie with a given name and value
 let congrats = "Make as much money as you can";
 let money = 0;
+let playerBusinesses = [];
 let business1Count = 0;
 let business2Count = 0;
 let business3Count = 0;
@@ -72,6 +96,76 @@ const business2Button = document.getElementById("business2");
 const business3Button = document.getElementById("business3");
 const timerDisplay = document.getElementById("timer");
 const scoreDisplay = document.getElementById("score");
+const businessDisplay = document.getElementById("player-business-list");
+const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    const businessList = document.getElementById("business-list");
+    const businesses = [
+        { name: "ABC Corporation", networth: 5000 },
+        { name: "XYZ Industries", networth: 3000 },
+        { name: "Alpha Inc.", networth: 1000 },
+        { name: "Beta Corp.", networth: 8000 },
+        { name: "Gamma Corp.", networth: 7000 },
+        { name: "Delta Enterprises", networth: 6000 },
+        { name: "Omega Ltd.", networth: 2000 },
+        { name: "Sigma Co.", networth: 4000 },
+        { name: "Zeta Holdings", networth: 9000 },
+        { name: "Epsilon Ventures", networth: 2500 },
+        { name: "Microsoft", networth: 10000},
+        { name: "Apple", networth: 150000},
+        { name: "Google", networth: 900000},
+        { name: "Bob", networth: 99999999},
+    ];
+searchButton.addEventListener("click", function () {
+    const searchTerm = searchInput.value.toLowerCase();
+    // Clear previous results
+    businessList.innerHTML = "";
+    // Filter and sort businesses based on the search term
+    const filteredBusinesses = businesses.filter(business => business.name.toLowerCase().includes(searchTerm));
+    const sortedBusinesses = filteredBusinesses.sort((a, b) => b.networth - a.networth);
+    // Display the top 10 businesses
+    const top10Businesses = sortedBusinesses.slice(0, 10);
+    top10Businesses.forEach(business => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${business.name}</td>
+            <td>$${business.networth}</td>
+            <td><button class="purchase-button" data-business-name="${business.name}" data-cost="${business.networth}">Purchase</button></td>
+        `;
+        businessList.appendChild(row);
+    });
+    // Add event listeners to the "Purchase" buttons
+    const purchaseButtons = document.querySelectorAll(".purchase-button");
+    purchaseButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const businessName = this.getAttribute("data-business-name");
+            const cost = parseInt(this.getAttribute("data-cost"));
+            purchaseBusiness(businessName, cost);
+        });
+    });
+});
+function updatePlayerBusinessesList() {
+    const playerBusinessList = document.getElementById("player-business-list");
+    playerBusinessList.innerHTML = ""; 
+    playerBusinesses.forEach((business, index) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `Business ${index + 1}: ${business.name} (Revenue: $${business.revenue.toFixed(2)} per second)`;
+        playerBusinessList.appendChild(listItem);
+    });
+}
+    // Function to purchase a business
+// Call the updatePlayerBusinessesList function whenever a business is purchased
+function purchaseBusiness(businessName, cost) {
+    if (money >= cost && !isGamePaused) {
+        money -= cost;
+        const revenue = cost / 10; // Each business generates 1/10 of its cost per second
+        playerBusinesses.push({ name: businessName, revenue });
+        updateMoneyDisplay();
+        updatePlayerBusinessesList(); // Update the list when a business is purchased
+    } else {
+        alert("Not enough money to buy this business.");
+    }
+}
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -112,21 +206,21 @@ clickButton.addEventListener("click", () => {
     }
 });
 business1Button.addEventListener("click", () => {
-    if (money >= 10) {
+    if (money >= 10 && !isGamePaused) {
         money -= 10;
         business1Count += 1;
         updateMoneyDisplay();
     }
 });
 business2Button.addEventListener("click", () => {
-    if (money >= 50) {
+    if (money >= 50 && !isGamePaused) {
         money -= 50;
         business2Count += 1;
         updateMoneyDisplay();
     }
 });
 business3Button.addEventListener("click", () => {
-    if (money >= 100) {
+    if (money >= 100 && !isGamePaused) {
         money -= 100;
         business3Count += 1;
         updateMoneyDisplay();
@@ -141,7 +235,7 @@ function updateMoneyDisplay() {
 function startTimer() {
     if (!startTime) {
         startTime = Date.now();
-        endTime = startTime + 10000; // 3 minutes
+        endTime = startTime + 180000; // 3 minutes
         setInterval(updateTimer, 1000);
     }
 }
