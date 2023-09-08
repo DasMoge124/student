@@ -1,5 +1,5 @@
 ---
-title: The Adventure Capitalist
+title: Adventure Capitalist
 layout: post
 type: tangibles
 description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
