@@ -161,7 +161,8 @@ const searchInput = document.getElementById("search-input");
         { name: "Bob", networth: 99999999},
     ];
 searchButton.addEventListener("click", function () {
-    const searchTerm = searchInput.value.toLowerCase();
+    if (!isGamePaused){
+            const searchTerm = searchInput.value.toLowerCase();
     // Clear previous results
     businessList.innerHTML = "";
     // Filter and sort businesses based on the search term
@@ -182,11 +183,14 @@ searchButton.addEventListener("click", function () {
     const purchaseButtons = document.querySelectorAll(".purchase-button");
     purchaseButtons.forEach(button => {
         button.addEventListener("click", function () {
-            const businessName = this.getAttribute("data-business-name");
-            const cost = parseInt(this.getAttribute("data-cost"));
-            purchaseBusiness(businessName, cost);
+            if(!isGamePaused){
+                const businessName = this.getAttribute("data-business-name");
+                const cost = parseInt(this.getAttribute("data-cost"));
+                purchaseBusiness(businessName, cost);
+            }
         });
     });
+    }
 });
 function updatePlayerBusinessesList() {
     const playerBusinessList = document.getElementById("player-business-list");
