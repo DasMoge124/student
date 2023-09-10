@@ -64,7 +64,7 @@ categories: ['C4.1']
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          height: 30vh; /* This makes the container take the full viewport height */
+          height: 50vh; /* This makes the container take the full viewport height */
           position: relative
       }
 </style>
