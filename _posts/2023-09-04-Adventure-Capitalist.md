@@ -1,30 +1,74 @@
 ---
-title: Adventure Capitalist
+comments: True
 layout: post
+title: Adventure Capitalist
+description: A classical ripoff of Adventure Capitalist
 type: tangibles
-description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
-courses: {csa: {week: 3} }
+courses: {'csse': {'week': 1}, 'csp': {'week': 1}, csa: {'week': 3}}
+categories: ['C4.1']
 ---
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: green;
-    }
-    .container {
-        text-align: center;
-        margin-top: 50px;
-    }
-    .money-container {
-        margin: 20px;
-    }
-    .business {
-        margin: 10px;
-    }
+ @import url('https://fonts.googleapis.com/css?family=Jost');
+      .click-button {
+        background-color: #2e6930;
+        font-family: 'Jost';
+        font-size: 36px;
+        width: 200px;
+        height: 80px;
+        color: #fefefe;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        position: relative
+      }
+      .business {
+        background-color: #265828;
+        font-family: 'Jost';
+        font-size: 22px;
+        width: 340px;
+        color: #fefefe;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    .search {
+        background-color: #265828;
+        font-family: 'Jost';
+        font-size: 11px;
+        width: 100px;
+        color: #fefefe;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    .purchase-button {
+        background-color: #265828;
+        font-family: 'Jost';
+        font-size: 10px;
+        width: 100px;
+        color: #fefefe;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+        transition: background-color 0.2s ease, color 0.2s ease;
+      }
+    .businesses {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 20vh; /* This makes the container take the full viewport height */
+          position: relative
+      }
+      .money-container{
+            display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 30vh; /* This makes the container take the full viewport height */
+          position: relative
+      }
 </style>
 <html lang="en">
-<div class="timer-container">
-    <h3>Time Left: <span id="timer">0</span> seconds</h3>
-</div>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,21 +77,28 @@ courses: {csa: {week: 3} }
 </head>
 <body>
     <div class="container">
-        <h1>Adventure Capitalist Clicker</h1>
-        <h2>Make as much money as possible within 3 minutes!</h2>
         <div class="money-container">
-            <p>Money: $<span id="money">0</span></p>
-            <button id="click-button">Click!</button>
+            <h1>Adventure Capitalist Clicker</h1>
+            <h2>Make as much money as possible within 3 minutes!</h2>
+            <h3>Time Left: <span id="timer">0</span> seconds</h3>
+            <h3>Money: $<span id="money">0</span></h3>
+            <h3 id="money-per-second">Money per second: $0.00</h3>
+            <button id="click-button" class = "click-button">~ Click ~</button>
         </div>
         <div class="businesses">
-            <button id="business1" class="business">Business 1 ($10)</button>
-            <button id="business2" class="business">Business 2 ($50)</button>
-            <button id="business3" class="business">Business 3 ($100)</button>
+            <button id="business1" class="business">Lemonade Stand ($25) ~ 0</button>
+            <button id="business2" class="business">Tech Repair ($100) ~ 0</button>
+            <button id="business3" class="business">Gas Station ($250) ~ 0</button>
+            <button id="business4" class="business">Wholesale Store ($1000) ~ 0</button>
         </div>
+    <div id="player-businesses">
+        <h2>Your Businesses:</h2>
+        <ul id="player-business-list"></ul>
+    </div>
             <!-- Business search input -->
-    <label for="search-input">Search for businesses:</label>
+    <h3><label for="search-input">Search for businesses:</label></h3>
     <input type="text" id="search-input">
-    <button id="search-button">Search</button>
+    <button id="search-button" class = "search">Search</button>
     <!-- Display search results -->
     <div id="results">
         <h2>Search Results:</h2>
@@ -63,17 +114,8 @@ courses: {csa: {week: 3} }
     </table>
     </div>
     <!-- Display the player's businesses -->
-    <div id="player-businesses">
-        <h2>Your Businesses:</h2>
-        <ul id="player-business-list"></ul>
-    </div>
-    <div>
-        <img id="image" src="{{ site.baseurl }}/images/images.jpg"/>
-        </div>
-        <img src="{{ site.baseurl }}/images/200w.gif"/>
     </div>
     <script src="script.js"></script>
-    
 </body>
 </html>
 <script>
@@ -84,6 +126,8 @@ let playerBusinesses = [];
 let business1Count = 0;
 let business2Count = 0;
 let business3Count = 0;
+let business4Count = 0;
+let businessesRevenue = 0;
 let startTime = null;
 let endTime = null;
 let isGamePaused = false;
@@ -93,6 +137,7 @@ const clickButton = document.getElementById("click-button");
 const business1Button = document.getElementById("business1");
 const business2Button = document.getElementById("business2");
 const business3Button = document.getElementById("business3");
+const business4Button = document.getElementById("business4");
 const timerDisplay = document.getElementById("timer");
 const scoreDisplay = document.getElementById("score");
 const businessDisplay = document.getElementById("player-business-list");
@@ -102,7 +147,7 @@ const searchInput = document.getElementById("search-input");
     const businesses = [
         { name: "ABC Corporation", networth: 5000 },
         { name: "XYZ Industries", networth: 3000 },
-        { name: "Alpha Inc.", networth: 1000 },
+        { name: "Alpha Inc.", networth: 1500 },
         { name: "Beta Corp.", networth: 8000 },
         { name: "Gamma Corp.", networth: 7000 },
         { name: "Delta Enterprises", networth: 6000 },
@@ -145,7 +190,7 @@ searchButton.addEventListener("click", function () {
 });
 function updatePlayerBusinessesList() {
     const playerBusinessList = document.getElementById("player-business-list");
-    playerBusinessList.innerHTML = ""; 
+    playerBusinessList.innerHTML = "";
     playerBusinesses.forEach((business, index) => {
         const listItem = document.createElement("li");
         listItem.textContent = `Business ${index + 1}: ${business.name} (Revenue: $${business.revenue.toFixed(2)} per second)`;
@@ -161,6 +206,8 @@ function purchaseBusiness(businessName, cost) {
         playerBusinesses.push({ name: businessName, revenue });
         updateMoneyDisplay();
         updatePlayerBusinessesList(); // Update the list when a business is purchased
+        const make = cost/20;
+        businessesRevenue += make;
     } else {
         alert("Not enough money to buy this business.");
     }
@@ -205,31 +252,39 @@ clickButton.addEventListener("click", () => {
     }
 });
 business1Button.addEventListener("click", () => {
-    if (money >= 10 && !isGamePaused) {
-        money -= 10;
+    if (money >= 25 && !isGamePaused) {
+        money -= 25;
         business1Count += 1;
         updateMoneyDisplay();
     }
 });
 business2Button.addEventListener("click", () => {
-    if (money >= 50 && !isGamePaused) {
-        money -= 50;
+    if (money >= 100 && !isGamePaused) {
+        money -= 100;
         business2Count += 1;
         updateMoneyDisplay();
     }
 });
 business3Button.addEventListener("click", () => {
-    if (money >= 100 && !isGamePaused) {
-        money -= 100;
+    if (money >= 250 && !isGamePaused) {
+        money -= 250;
         business3Count += 1;
+        updateMoneyDisplay();
+    }
+});
+business4Button.addEventListener("click", () => {
+    if (money >= 1000 && !isGamePaused) {
+        money -= 1000;
+        business4Count += 1;
         updateMoneyDisplay();
     }
 });
 function updateMoneyDisplay() {
     moneyDisplay.textContent = money;
-    business1Button.textContent = `Business 1 ($10) - ${business1Count}`;
-    business2Button.textContent = `Business 2 ($50) - ${business2Count}`;
-    business3Button.textContent = `Business 3 ($100) - ${business3Count}`;
+    business1Button.textContent = `🍋 Lemonade Stand ($25) ~ ${business1Count}`;
+    business2Button.textContent = `👨‍💻 Tech Repair ($100) ~ ${business2Count}`;
+    business3Button.textContent = `⛽ Gas Station ($250) ~ ${business3Count}`;
+    business4Button.textContent = `🏬 Wholesale Store ($1000) ~ ${business4Count}`;
 }
 function startTimer() {
     if (!startTime) {
@@ -252,13 +307,43 @@ function gameOver() {
     isGamePaused = true;
     const elapsedTimeInSeconds = Math.floor((endTime - startTime) / 1000);
     timerDisplay.textContent = "Time is up man! You have zero ";
+    setCookie("playerScore", money, 365);
+    if (money < highestScore) {
+        alert("You didn't make it... Your balance was $" + money + "... but your high score is $" + highestScore);
+    }
+    if (money > highestScore) {
+        highestScore = money;
+        setCookie("highestScore", highestScore, 365);
+        alert("Congratulations! Your bank was shocked as they looked at your account and saw $" + highestScore );
+    }
 }
 // Add an interval for passive income from businesses
 setInterval(() => {
     if (!isGamePaused) {
-        money += business1Count * 1 + business2Count * 5 + business3Count * 10;
+        money += business1Count * .5 + business2Count * 2.5 + business3Count * 7.5 + business4Count * 37.5 + businessesRevenue;
         updateMoneyDisplay();
     }
-}, 1000);
-
+}, 250);
+resetButton.addEventListener("click", () => {
+    money = 0;
+    startTime = null;
+    endTime = null;
+    let business1Count = 0;
+    let business2Count = 0;
+    let business3Count = 0;
+    let business4Count = 0;
+    isGamePaused = false;
+    updateMoneyDisplay();
+    timerDisplay.textContent = "180";
+});
+const moneyPerSecondDisplay = document.getElementById("money-per-second");
+setInterval(updateMoneyPerSecondDisplay, 250);
+function updateMoneyPerSecondDisplay() {
+    if (!isGamePaused) {
+        const currentTime = Date.now();
+        const elapsedTimeInSeconds = (currentTime - startTime) / 1000;
+        const moneyPerSecond = (money / elapsedTimeInSeconds).toFixed(2);
+        moneyPerSecondDisplay.textContent = `Money per second: $${moneyPerSecond}`;
+    }
+};
 </script>
