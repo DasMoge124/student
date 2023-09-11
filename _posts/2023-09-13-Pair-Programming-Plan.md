@@ -9,18 +9,15 @@ categories: ['C4.1']
 ---
 ### Draft and ideas (9/4/2023)
 Idea - A cookie clicker game to keep the user entertained
--
-First Draft - A game where the objective is to get as much money as you can. You are able to buy businesses to grow your economy. We included cookies and math functions to remember the users's name as well as count up the money.
-Addon 1 - We added styling and a bigger business to make the game more fast paced and fluid. we also made the game more cometitive by adding a time limit, requiring players to react fast. We also added a cookie to save the player's score. Attempted to add reset button.
-Addon 2 - We added a database as per requirements which allows you to search up a company and purchase it, bringing in even more cash. We also implemented a money-per-second counter to allow the user to keep track of how much they earn. Used the player's score to add a message determining whether you beat your previous score or lost.
--
+- First Draft - A game where the objective is to get as much money as you can. You are able to buy businesses to grow your economy. We included cookies and math functions to remember the users's name as well as count up the money.
+- Addon 1 - We added styling and a bigger business to make the game more fast paced and fluid. we also made the game more cometitive by adding a time limit, requiring players to react fast. We also added a cookie to save the player's score. Attempted to add reset button.
+- Addon 2 - We added a database as per requirements which allows you to search up a company and purchase it, bringing in even more cash. We also implemented a money-per-second counter to allow the user to keep track of how much they earn. Used the player's score to add a message determining whether you beat your previous score or lost.
 
 
 
 
 ### ChatGPT College Board Review and Comments (9/11/2023)
--
-HTML and CSS Styling:
+- HTML and CSS Styling:
 1. Your use of HTML and CSS for structuring and styling the web page is well done. Properly structured HTML and CSS are important foundational skills in web development.
 -
 JavaScript Functions:
