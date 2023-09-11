@@ -1,7 +1,7 @@
 ---
 comments: True
 layout: post
-title: PaiR Programming Plan
+title: Pair Programming Plan
 description: Pair Programming Plan
 type: tangibles
 courses: {'csse': {'week': 1}, 'csp': {'week': 1}, csa: {'week': 3}}
