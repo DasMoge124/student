@@ -3,7 +3,7 @@ comments: True
 layout: post
 title: Pair Programming Plan
 description: Pair Programming Plan
-type: tangibles
+type: hacks
 courses: {'csse': {'week': 1}, 'csp': {'week': 1}, csa: {'week': 3}}
 categories: ['C4.1']
 ---
