@@ -1,8 +1,8 @@
 ---
-title: Unit 1 Lesson Blog
+title: Unit 1 Lesson Hacks Blog
 toc: True
-description: Lesson 1 Hacks
-courses: {'csse': {'week': 5}, 'csp': {'week': 2, 'categories': ['3.A', '5.B']}, 'csa': {'week': 6}}
+description: Lesson 1 Hacks Complete
+courses: {'csse': {'week': 5}, 'csp': {'week': 2, 'categories': ['3.A', '5.B']}, 'csa': {'week': 7}}
 categories: ['C3.0', 'C3.1', 'C4.1']
 type: hacks
 ---
