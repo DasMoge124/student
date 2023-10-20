@@ -98,6 +98,6 @@ Value at index 0 through alias2: 100
 In the below example, we explore encapsulation and demonstrate how to create a Person class to represent individuals with private attributes for name, age, and hobbies. The code showcases how to initialize and manipulate a Person object's state, including adding hobbies to the person's list, while ensuring the original data remains unchanged.
 
 ## My Hacks:
-- https://github.com/DasMoge124/student/blob/main/_notebooks/2023-10-14-unit5start.ipynb
-- https://github.com/DasMoge124/student/blob/main/_notebooks/2023-10-14-unit5secondpart.ipynb
-- https://github.com/DasMoge124/student/blob/main/_notebooks/2023-10-14-unit5lastpart.ipynb
+- [Hacks 1](https://github.com/DasMoge124/student/blob/main/_notebooks/2023-10-14-unit5start.ipynb)
+- [Hacks 2](https://github.com/DasMoge124/student/blob/main/_notebooks/2023-10-14-unit5secondpart.ipynb)
+- [Hacks 3](https://github.com/DasMoge124/student/blob/main/_notebooks/2023-10-14-unit5lastpart.ipynb)
