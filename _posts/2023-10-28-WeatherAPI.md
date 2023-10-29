@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: All Hacks - Check the very bottom for the links to all of the hacks
+title: Weather API
 ---
 ## Tested Weather API
 <!DOCTYPE html>
@@ -28,8 +28,8 @@ const descriptionElement = document.getElementById("description");
 document.addEventListener("DOMContentLoaded", () => {
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function (position) {
-            const lat = position.coords.latitude;
-            const lon = position.coords.longitude;
+            const lat = 33.01479454987898;
+            const lon = -117.12140255005595;
             const apiKey = '777d2b06a33946bf47eba273e42a3b7e';
             const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
             fetch(apiUrl)
