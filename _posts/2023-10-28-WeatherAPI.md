@@ -16,18 +16,21 @@ title: All Hacks - Check the very bottom for the links to all of the hacks
         <h3 id="location">Location: </h3>
         <p id="temperature">Temperature: </p>
         <p id="description"> Description: </p>
-    </div>    <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
 <script>
 // script.js
-const place = document.getElementById("location");
+const locationElement = document.getElementById("location");
+const temperatureElement = document.getElementById("temperature");
+const descriptionElement = document.getElementById("description");
 document.addEventListener("DOMContentLoaded", () => {
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function (position) {
             const lat = position.coords.latitude;
             const lon = position.coords.longitude;
-            const apiKey = '777d2b06a33946bf47eba273e42a3b7e';
+            const apiKey = 'APIP-KEY Known';
             const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
             fetch(apiUrl)
                 .then((response) => response.json())
@@ -35,13 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     const location = data.name;
                     const temperature = data.main.temp;
                     const description = data.weather[0].description;
-                    place.textContent = `Location: ${location}`;
-                    document.getElementById("temperature").textContent = `Temperature: ${temperature}°C`;
-                    document.getElementById("description").textContent = `Description: ${description}`;
+                    locationElement.textContent = `Location: ${location}`;
+                    temperatureElement.textContent = `Temperature: ${temperature}°C`;
+                    descriptionElement.textContent = `Description: ${description}`;
                 })
                 .catch((error) => {
                     console.error("Error fetching weather data: ", error);
-                    document.getElementById("description").textContent = "Cant get no info";
+                    descriptionElement.textContent = "Can't get info";
                 });
         });
     } else {
