@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navigator.geolocation.getCurrentPosition(function (position) {
             const lat = position.coords.latitude;
             const lon = position.coords.longitude;
-            const apiKey = 'APIP-KEY Known';
+            const apiKey = '777d2b06a33946bf47eba273e42a3b7e';
             const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
             fetch(apiUrl)
                 .then((response) => response.json())
