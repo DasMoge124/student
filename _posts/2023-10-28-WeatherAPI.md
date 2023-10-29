@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: All Hacks - Check the very bottom for the links to all of the hacks
 ---
-
+## Tested Weather API
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +13,9 @@ title: All Hacks - Check the very bottom for the links to all of the hacks
 <body>
     <div class="weather-container">
         <h1>Current Weather</h1>
-        <h3 id="location">Location: Still waiting</h3>
+        <h3 id="location">Location: Waiting for geolocation...</h3>
         <p id="temperature">Temperature: </p>
-        <p id="description"> Description: </p>
+        <p id="description">Description: </p>
     </div>
     <script src="script.js"></script>
 </body>
@@ -30,10 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
         navigator.geolocation.getCurrentPosition(function (position) {
             const lat = position.coords.latitude;
             const lon = position.coords.longitude;
-            const apiKey = '777d2b06a33946bf47eba273e42a3b7e';
+            const apiKey = 'YOUR-API-KEY';
             const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
             fetch(apiUrl)
-                .then((response) => response.json())
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                })
                 .then((data) => {
                     const location = data.name;
                     const temperature = data.main.temp;
@@ -44,11 +49,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
                 .catch((error) => {
                     console.error("Error fetching weather data: ", error);
-                    descriptionElement.textContent = "Can't get info";
+                    locationElement.textContent = "Unable to fetch location data";
+                    temperatureElement.textContent = "Unable to fetch temperature data";
+                    descriptionElement.textContent = "Unable to fetch description data";
                 });
+        }, function (error) {
+            console.error("Error getting geolocation: " + error.message);
+            locationElement.textContent = "Geolocation error: " + error.message;
         });
     } else {
         console.error("Geolocation is not available in this browser.");
+        locationElement.textContent = "Geolocation not available";
     }
 });
 </script>
