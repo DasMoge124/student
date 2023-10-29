@@ -27,36 +27,39 @@ const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 document.addEventListener("DOMContentLoaded", () => {
     if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            const lat = 33.01479454987898;
-            const lon = -117.12140255005595;
-            const apiKey = '777d2b06a33946bf47eba273e42a3b7e';
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-            fetch(apiUrl)
-                .then((response) => {
-                    if (!response.ok) {
-                        throw new Error("Network response was not ok");
-                    }
-                    return response.json();
-                })
-                .then((data) => {
-                    const location = data.name;
-                    const temperature = data.main.temp;
-                    const description = data.weather[0].description;
-                    locationElement.textContent = `Location: ${location}`;
-                    temperatureElement.textContent = `Temperature: ${temperature}°C`;
-                    descriptionElement.textContent = `Description: ${description}`;
-                })
-                .catch((error) => {
-                    console.error("Error fetching weather data: ", error);
-                    locationElement.textContent = "Unable to fetch location data";
-                    temperatureElement.textContent = "Unable to fetch temperature data";
-                    descriptionElement.textContent = "Unable to fetch description data";
-                });
-        }, function (error) {
-            console.error("Error getting geolocation: " + error.message);
-            locationElement.textContent = "Geolocation error: " + error.message;
-        });
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+                const lat = 33.01479454987898;
+                const lon = -117.12140255005595;
+                const apiKey = '777d2b06a33946bf47eba273e42a3b7e';
+                const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+                fetch(apiUrl)
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error("Network response was not ok");
+                        }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        const location = data.name;
+                        const temperature = data.main.temp;
+                        const description = data.weather[0].description;
+                        locationElement.textContent = `Location: ${location}`;
+                        temperatureElement.textContent = `Temperature: ${temperature}°C`;
+                        descriptionElement.textContent = `Description: ${description}`;
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching weather data: ", error);
+                        locationElement.textContent = "Unable to fetch location data";
+                        temperatureElement.textContent = "Unable to fetch temperature data";
+                        descriptionElement.textContent = "Unable to fetch description data";
+                    });
+            },
+            function (error) {
+                console.error("Error getting geolocation: " + error.message);
+                locationElement.textContent = "Geolocation error: " + error.message;
+            }
+        );
     } else {
         console.error("Geolocation is not available in this browser.");
         locationElement.textContent = "Geolocation not available";
