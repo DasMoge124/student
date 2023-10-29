@@ -13,7 +13,7 @@ title: All Hacks - Check the very bottom for the links to all of the hacks
 <body>
     <div class="weather-container">
         <h1>Current Weather</h1>
-        <h3 id="location">Location: </h3>
+        <h3 id="location">Location: Still waiting</h3>
         <p id="temperature">Temperature: </p>
         <p id="description"> Description: </p>
     </div>
