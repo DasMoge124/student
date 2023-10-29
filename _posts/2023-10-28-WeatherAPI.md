@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     })
                     .then((data) => {
                         const location = data.name;
-                        const temperature = data.main.temp;
+                        const temperature = (data.main.temp*9/5)+32;
                         const description = data.weather[0].description;
                         locationElement.textContent = `Location: ${location}`;
-                        temperatureElement.textContent = `Temperature: ${temperature}°C`;
+                        temperatureElement.textContent = `Temperature: ${temperature}°F`;
                         descriptionElement.textContent = `Description: ${description}`;
                     })
                     .catch((error) => {
