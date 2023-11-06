@@ -134,8 +134,9 @@ Some Javascript:
 <img src="{{ site.baseurl }}/images/Screenshot 2023-11-06 005424.png" width=250px/>
 
 ## Analysis of commits
-<img src="{{ site.baseurl }}/images/analysis.png" width=250px/>
-Reflection:
+<p><img src="{{ site.baseurl }}/images/analysis.png" width=250px/></p>
+
+## Reflection:
 - If the database doesn't work, make a new one and don't try to fix the old one as it makes matters worse.
 - When making a schedule be cautious
 Challenges:

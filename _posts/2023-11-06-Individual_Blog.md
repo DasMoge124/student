@@ -7,7 +7,7 @@ categories: ['C3.0', 'C3.1', 'C4.1']
 type: hacks
 ---
 - Currently saved in blog
-<p><img src="{{ site.baseurl }}/images/CSSE.png" width=250px/></p>
-<p><img src="{{ site.baseurl }}/images/CSP.png" width=250px/></p>
-<p><img src="{{ site.baseurl }}/images/CSA1.png" width=250px/></p>
-<p><img src="{{ site.baseurl }}/images/CSA2.png" width=250px/></p>
+<p><img src="{{ site.baseurl }}/images/CSSE.jpg" width=250px/></p>
+<p><img src="{{ site.baseurl }}/images/CSP.jpg" width=250px/></p>
+<p><img src="{{ site.baseurl }}/images/CSA1.jpg" width=250px/></p>
+<p><img src="{{ site.baseurl }}/images/CSA2.jpg" width=250px/></p>
