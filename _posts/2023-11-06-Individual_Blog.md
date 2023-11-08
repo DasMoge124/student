@@ -11,8 +11,8 @@ type: hacks
 - When organizing the lessons, I wanted to make the lesson more visual and easy to understand as Inheritance is a pretty hard and important topic in AP Exam. I look through all of fiveable and most of collegeboard videos, especially for my part. I worked on 9.1 and 9.2 lessons, I've also watched Collegeboard videos for other sections in case anyone in the audience has any questions and I can easily answer them if my team didn't know. Kind of like the last part for the toString question. I also helped out on looking at some of my other teammate's sections and yes some people were making other changes after I look at them.
 
 ## Plan for blog:
-I have made it so that the unit lessons are more accessible in my timebox so I can just click the link and I can just look through them whenever I need to. I will always try to 
-I will still update my blog up to date for key features to consider
+I have made it so that the unit lessons are more accessible in my timebox so I can just click the link and I can just look through them whenever I need to. I will look at these blogs while preparing for the AP Exam as well as doing practice FRQs at the same time.
+I will still update my blog up to date for key features to consider.
 
 ## FRQ Review:
 <p><img src="{{ site.baseurl }}/images/AP.png" width=250px/></p>
@@ -23,7 +23,7 @@ I got a 39/40 overall. I messed up on question 13 as I misread the code a bit. T
 I didn't get to take a picture of every single event, especially the ones I reviewed. I did take pictures for other classes like CSP and CSSE. All Projects were amazing and I did feel like some projects could have improvements. I also have seen some really cool 3D Animations artwork. Some of them seemed to have been mine last year. It was great looking at them after not doing 3D Animation for months. The projects I have reviewed were good, there was a group who made a chess website along with a chat box, I was impressed, but considering how multiplayer factor was not working, this kind of made me sad. But multiplayer is hard, so I still gave them a high score regardless.
 <p><img src="{{ site.baseurl }}/images/CSSE.jpg" width=250px/></p>
 <p><img src="{{ site.baseurl }}/images/CSP1.jpg" width=250px/></p>
-<p><img src="{{ site.baseurl }}/images/CSA1.jpg" width=250px/></p>
+<p><img src="{{ site.baseurl }}/images/CSA.jpg" width=250px/></p>
 <p><img src="{{ site.baseurl }}/images/CSA2.jpg" width=250px/></p>
 Extra Credit: [Link]https://github.com/Soham360/sturdy-fiesta/issues/13
 
