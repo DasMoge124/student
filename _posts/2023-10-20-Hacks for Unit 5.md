@@ -1,8 +1,10 @@
 ---
-toc: true
-comments: true
-layout: post
-title: All Hacks - Check the very bottom for the links to all of the hacks
+title: Project Notes
+toc: True
+description: Tri 1 review
+courses: {'csse': {'week': 5}, 'csp': {'week': 2, 'categories': ['3.A', '5.B']}, 'csa': {'week': 9}}
+categories: ['C3.0', 'C3.1', 'C4.1']
+type: hacks
 ---
 # 5.1 Anatomy of a Class
 

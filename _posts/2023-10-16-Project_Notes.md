@@ -10,8 +10,10 @@ type: hacks
 - Java Code for API
 - Javascript timer --> Bell schedule and daily planner as well
 - sprite sheet for clothes customization and make a human and no naked stuff; if naked, blur this stuff out orlando
-- 2 ppl respected
+- Need to make a JSON for class list
 - Update scrumboard
+- Below is some java code for the database
+- I have also fixed the javascript code so that the period classes would all work perfectly fine.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -62,8 +64,7 @@ import javax.persistence.*;
 import java.util.Date;
 @Entity
 public class Event {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+c    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private Date date;
