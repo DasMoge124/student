@@ -7,10 +7,13 @@ categories: ['C3.0', 'C3.1', 'C4.1']
 type: hacks
 ---
 My final collegeboard results were a 35/39. It was a challegning test. I got a 35/39. I spent like 2 hours throughout the entire test. There was a problem about implements and I got it wrong. The worst part is that its never part of collegeboard, therefore I never learned it. I did discover that when you implement a class, like the one the subclass implements, you can still do the same thing for the extends thing. The hardest problem for me was the dice problem and the easiest for me was the WATCH problem.
+<p class="center1">
+  <img src="{{ site.baseurl }}/images/myscore.png" width=250px/>
+</p>
 
 Hardest one:
 <p class="center1">
-  <img src="{{ site.baseurl }}/images/image.png" width=250px/>
+  <img src="{{ site.baseurl }}/images/hard.png" width=250px/>
 </p>
 What I struggled on
 What I learned: 
@@ -18,7 +21,7 @@ When you multiply Math.random() by a number x, then it is limited to a random nu
 
 Easiest One:
 <p class="center1">
-  <img src="{{ site.baseurl }}/images/image-1.png" width=250px/>
+  <img src="{{ site.baseurl }}/images/easy.png" width=250px/>
 </p>
 I just related this to python and I managed to get this correct. I was once studying for a USACO Competition and one of them consisted of searching through parts of an array. I applied to java strings later on.
 
