@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/DasMoge124/student/issues"
   },
-  "homepage": "https://github.com/DasMoge124/student#readme",
-  "dependencies": {
-    "dotenv": "^16.3.1"
-  }
+  "homepage": "https://github.com/DasMoge124/student#readme"
 }
