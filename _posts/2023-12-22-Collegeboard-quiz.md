@@ -24,7 +24,7 @@ Second Hardest One:
 <p class="center1">
   <img src="{{ site.baseurl }}/images/asuidfn.png" width=500px/>
 </p>
-I wasn't really clear on it. But what I learned from it is that for Demorgan's Law, !(x||y) --> !x && !y
+I wasn't really clear on it. But what I learned from it is that for Demorgan's Law, !(x||y) --> !x && !ye
 Easiest One:
 <p class="center1">
   <img src="{{ site.baseurl }}/images/easy.png" width=500px/>
