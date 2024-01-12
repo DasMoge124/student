@@ -2,7 +2,6 @@
 toc: true
 comments: true
 title: Classic Snake Game
-layout: hacks
 description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
 tags: [javascript]
 ---
