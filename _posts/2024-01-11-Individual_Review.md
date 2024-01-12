@@ -26,6 +26,7 @@ Probably my favorite lesson. I actually review what I previously learned in the 
 - [Link to Issues](https://github.com/DasMoge124/BOBBY/issues/2)
 ## Key Commits to my website:
 <p><img src="{{ site.baseurl }}/images/MyCommits.png" width=900px/></p>
+- [Tri1Commits](https://dasmoge124.github.io/student/c3.0/c3.1/c4.1/2023/11/05/Individual_Review.html)
 
 ## For the Miniproject
 - Frontend
