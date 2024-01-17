@@ -12,6 +12,7 @@ type: tangibles
 - I learned more about  what I did wrong as I actually spent more time on this than last time. I learned more about De Morgan's Law
 - ![Alt text](image.png)
 - [Link](https://dasmoge124.github.io/student/c3.0/c3.1/c4.1/2023/12/22/Collegeboard-quiz.html)
+- In addition, I have done some ACSL contest, with some problems being similar to the collegeboard MC
 ## SASS
 - I learned how SASS can help make websites look better and how to operate properly.
 - [SASS](https://dasmoge124.github.io/student/2023/12/05/FinalSASSLesson_IPYNB_2_.html)
