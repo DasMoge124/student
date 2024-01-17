@@ -6,6 +6,8 @@ courses: {'csse': {'week': 5}, 'csp': {'week': 2, 'categories': ['3.A', '5.B']},
 categories: ['C3.0', 'C3.1', 'C4.1']
 type: tangibles
 ---
+## Basic Info for overall lesson:
+- Median = 0.95
 ### Collegeboard Quiz Prep
 - I learned more about  what I did wrong as I actually spent more time on this than last time. I learned more about De Morgan's Law
 - ![Alt text](image.png)
@@ -34,6 +36,11 @@ Probably my favorite lesson. I actually review what I previously learned in the 
 - Backend
 <p><img src="{{ site.baseurl }}/images/MyImage.png" width=900px/></p>
 I have had a few issues on committing and having them commit through. But later on, I was able to put everything in an organized manner in my website.
+
+## Contributions to the lesson:
+<p><img src="{{ site.baseurl }}/images/image-4.png" width=900px/></p>
+<p><img src="{{ site.baseurl }}/images/GRADING.png" width=900px/></p>
+I did most of the grading. I mainly just made some of the popcorn hacks for the lesson.
 
 ## My Timebox:
 <p><img src="{{ site.baseurl }}/images/Abe.png" width=900px/></p>
