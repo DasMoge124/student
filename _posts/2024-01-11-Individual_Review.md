@@ -23,6 +23,7 @@ Probably my favorite lesson. I actually review what I previously learned in the 
 - [Link](https://dasmoge124.github.io/student/2023/12/08/JavaExploitsStudent_IPYNB_2_.html)
 - Now I have learned a lot more.
 ## Hashmaps:
+- [Hashmap_Links](https://dasmoge124.github.io/student/2023/12/13/HashmapsHashsetsCollections_IPYNB_2_.html)
 ### One thing I have learned is that hashmaps function similar to python arrays in terms of adding and removing, but instead of appending you use add.
 - [Link](https://dasmoge124.github.io/student/2023/12/13/HashmapsHashsetsCollections_IPYNB_2_.html)
 # My Issue:
