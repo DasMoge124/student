@@ -38,7 +38,8 @@ Probably my favorite lesson. I actually review what I previously learned in the 
 <p><img src="{{ site.baseurl }}/images/commitsw.png" width=900px/></p>
 - Backend
 <p><img src="{{ site.baseurl }}/images/MyImage.png" width=900px/></p>
-I have had a few issues on committing and having them commit through. But later on, I was able to put everything in an organized manner in my website.
+- This was where I mainly worked on the fibonacci art piece
+I have had a few issues on committing and having them commit through. But later on, I was able to put everything in an organized manner in my website. 
 
 ## Contributions to the lesson:
 <p><img src="{{ site.baseurl }}/images/image-4.png" width=500px/></p>
