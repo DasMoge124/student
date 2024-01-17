@@ -21,6 +21,7 @@ type: tangibles
 ## Java Exploits:
 Probably my favorite lesson. I actually review what I previously learned in the CTF Club. At that time I learned more about how SQL injections work and the applications of each SQL Injection. For example, vulnerable websites being vulnerable to pipe linux commands within their websites:
 - [Link](https://dasmoge124.github.io/student/2023/12/08/JavaExploitsStudent_IPYNB_2_.html)
+- Now I have learned a lot more.
 ## Hashmaps:
 ### One thing I have learned is that hashmaps function similar to python arrays in terms of adding and removing, but instead of appending you use add.
 - [Link](https://dasmoge124.github.io/student/2023/12/13/HashmapsHashsetsCollections_IPYNB_2_.html)
@@ -38,7 +39,7 @@ Probably my favorite lesson. I actually review what I previously learned in the 
 I have had a few issues on committing and having them commit through. But later on, I was able to put everything in an organized manner in my website.
 
 ## Contributions to the lesson:
-<p><img src="{{ site.baseurl }}/images/image-4.png" width=900px/></p>
+<p><img src="{{ site.baseurl }}/images/image-4.png" width=500px/></p>
 <p><img src="{{ site.baseurl }}/images/GRADING.png" width=900px/></p>
 I did most of the grading. I mainly just made some of the popcorn hacks for the lesson.
 
@@ -47,3 +48,6 @@ I did most of the grading. I mainly just made some of the popcorn hacks for the 
 
 ## Something I am passionate about my project
 - Something I am passionate about my project is adding sorting or searching to the java backend. I feel like that it will make the project more interesting and have a better use than the original project I did last tri.
+
+## A Key Learning from lesson:
+- A key learning for my project is essence for preventing sql injects and xxs. These right now are critical as they are possible to exoose others' public info. As a result, for the project I will research possible ways to prevent these kinds of attacks.
