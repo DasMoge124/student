@@ -9,9 +9,166 @@ type: hacks
 ## My Contributions to Project
 
 For the backend, I essentially made some KNN features for searching for most relevant student. Raymond technically suggested this to me so I implemented somehting similar to that:
-![alt text](../images/Backend1.png) 
-![alt text](../images/Backend2.png) 
-![alt text](../images/Backend3.png)
+
+*Student Controller*
+```java
+package com.nighthawk.spring_portfolio.mvc.search;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/student")
+@CrossOrigin(origins = "https://rik-csa.github.io/")
+public class StudentController {
+
+    private List<Student> students = new ArrayList<>();
+
+    public StudentController() {
+        // Initialize your student list
+        students.add(new Student("John Kim", Arrays.asList("Math", "Physics"), "Chicago", true));
+        // Add more sample students here...
+    }
+
+    @PostMapping("/add")
+    public ResponseEntity<String> addStudent(@RequestBody Student newStudent) {
+        students.add(newStudent);
+        return ResponseEntity.ok("Student added successfully");
+    }
+
+    @PostMapping("/findMostRelevant")
+    public ResponseEntity<Student> findMostRelevantStudent(@RequestBody Student newStudent,
+            @RequestParam int k) {
+        Student mostRelevantStudent = KNNStudentSelection.findMostRelevantStudent(students, newStudent, k);
+        return ResponseEntity.ok(mostRelevantStudent);
+    }
+
+    @GetMapping("/allStudents")
+    public ResponseEntity<List<Student>> getAllStudents() {
+        return ResponseEntity.ok(students);
+    }
+}
+
+// Student Class
+package com.nighthawk.spring_portfolio.mvc.search;
+
+import java.util.List;
+
+public class Student {
+    private String name;
+    private List<String> subjectsKnown;
+    private String preferredLocation;
+    private boolean internshipPreferred;
+
+    // Constructors (including a no-arg constructor)
+
+    public Student() {
+    }
+
+    public Student(String name, List<String> subjectsKnown, String preferredLocation,
+            boolean internshipPreferred) {
+        this.name = name;
+        this.subjectsKnown = subjectsKnown;
+        this.preferredLocation = preferredLocation;
+        this.internshipPreferred = internshipPreferred;
+    }
+
+    // Getters and Setters
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<String> getSubjectsKnown() {
+        return subjectsKnown;
+    }
+
+    public void setSubjectsKnown(List<String> subjectsKnown) {
+        this.subjectsKnown = subjectsKnown;
+    }
+
+    public String getPreferredLocation() {
+        return preferredLocation;
+    }
+
+    public void setPreferredLocation(String preferredLocation) {
+        this.preferredLocation = preferredLocation;
+    }
+
+    public boolean isInternshipPreferred() {
+        return internshipPreferred;
+    }
+
+    public void setInternshipPreferred(boolean internshipPreferred) {
+        this.internshipPreferred = internshipPreferred;
+    }
+}
+
+// KNN Finder
+package com.nighthawk.spring_portfolio.mvc.search;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class KNNStudentSelection {
+
+    // KNN algorithm for student selection
+    public static Student findMostRelevantStudent(List<Student> students, Student newStudent, int k) {
+        Map<Double, Student> distanceMap = new HashMap<>();
+
+        // Calculate Euclidean distance for each student
+        for (Student student : students) {
+            double distance = calculateDistance(student, newStudent);
+            distanceMap.put(distance, student);
+        }
+
+        // Sort distances and get the top k neighbors
+        List<Double> distances = new ArrayList<>(distanceMap.keySet());
+        Collections.sort(distances);
+
+        // Return the most relevant student
+        return distanceMap.get(distances.get(0));
+    }
+
+    private static double calculateDistance(Student student1, Student student2) {
+        // Simple distance calculation based on preferences
+        double subjectDistance = calculateSubjectDistance(student1.getSubjectsKnown(), student2.getSubjectsKnown());
+        double locationDistance = student1.getPreferredLocation().equals(student2.getPreferredLocation()) ? 0 : 1;
+
+        // Euclidean distance
+        return Math.sqrt(Math.pow(subjectDistance, 2) + Math.pow(locationDistance, 2));
+    }
+
+    private static double calculateSubjectDistance(List<String> subjects1, List<String> subjects2) {
+        // Jaccard similarity for subject distance
+        List<String> union = new ArrayList<>(subjects1);
+        union.addAll(subjects2);
+
+        List<String> intersection = new ArrayList<>(subjects1);
+        intersection.retainAll(subjects2);
+
+        return 1 - ((double) intersection.size() / union.size());
+    }
+}
+
+```
 
 #### Frontend:
 ```html
@@ -134,4 +291,4 @@ function findMostRelevantStudent(event) {
 [FRQ 3](https://dasmoge124.github.io/student/2024/02/19/Final_FRQ_3_IPYNB_2_.html)
 
 ## Github Analysis:
-![alt text](../images/Github.png)
+[Link](https://github.com/DasMoge124)
