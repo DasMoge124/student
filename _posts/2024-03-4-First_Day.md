@@ -292,3 +292,5 @@ function findMostRelevantStudent(event) {
 
 ## Github Analysis:
 [Link](https://github.com/DasMoge124)
+[Link to Backend](https://github.com/RIK-CSA/RIK-CSA-backend/graphs/contributors)
+[Frontend](https://github.com/RIK-CSA/RIK-CSA-frontend/graphs/contributors)
