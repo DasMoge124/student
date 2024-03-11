@@ -2,7 +2,7 @@
 title: Individual Review
 toc: True
 description: Tri 1 review
-courses: {'csse': {'week': 5}, 'csp': {'week': 2, 'categories': ['3.A', '5.B']}, 'csa': {'week': 18}}
+courses: {'csse': {'week': 5}, 'csp': {'week': 2, 'categories': ['3.A', '5.B']}, 'csa': {'week': 22}}
 categories: ['C3.0', 'C3.1', 'C4.1']
 type: tangibles
 ---
