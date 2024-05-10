@@ -14,19 +14,25 @@ Overall, it was quite an experience. For many, it was very different from what w
 ## During our rehearsal practice:
 - This was a funny experience. I remember the time I slapped my knee during the performance. It was funny just saying "SELECTION SORT." Below are pictures of my performance
 
-![alt text](image-4.png)
-
-![alt text](image-5.png)
-
+<p class="center1">
+  <img src="{{ site.baseurl }}/images/image-4.png" width=250px/>
+</p>
+<p class="center1">
+  <img src="{{ site.baseurl }}/images/image-5.png" width=250px/>
+</p>
 ## During our performance
 I've learned quite a lot about the different kinds of sorting. I learned stuff like merge sort just spliting in half and then sorting then combine and sort then so on and bubble sort is consecutively comparing until everything is sorted. Rachit's team's performance was a really fun experience considering how he is dressed up as "Rachetlina" or something and they used sorting to find the best "match." When Theo carried Rachit, I was laughing inside.
 
-![alt text](image-6.png)
-
+<p class="center1">
+  <img src="{{ site.baseurl }}/images/image-6.png" width=250px/>
+</p>
 - The flowers skit lol. "FLOWERS. FLOWERS. FLOWERS":
 
-![alt text](image-7.png)
-
+<p class="center1">
+  <img src="{{ site.baseurl }}/images/image-7.png" width=250px/>
+</p>
 And there is us:
 
-![alt text](image-8.png)
+<p class="center1">
+  <img src="{{ site.baseurl }}/images/image-8.png" width=250px/>
+</p>
