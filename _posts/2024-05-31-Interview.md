@@ -18,6 +18,8 @@ courses: {'csse': {'week': 1}, 'csp': {'week': 1, 'categories': ['4.A']}, 'csa':
 #### Topics in order: Full Stack Projects, Boy Scouts & Del Norte Chess Club, Del Norte Algorithmic Coding Club & Del Norte CTF Club
 
 ## Full-Stack Coding Projects:
+<img src="{{ site.baseurl }}/images/jinder.png" width=250px/>
+
 Full-stack projects require more than just knowing coding and data structures; it also requires teamwork, leadership, and effective collaboration.
 Of course I wasn't the best student considering I was the only few who skipped to AP CSA and I was sometimes clueless. But that didn't prevent me from my devotion to developing the skills needed to be a successful developer in projects like the ones I worked on. Lets start from the beginning:
 - In the very beginning, I was stressed and I wasn't too familiar with how to connect the frontend and backend. I did have to look up to my team members who were more experienced in these kinds of operations.  At least in Tri 1, I was having a hard time to understand everything. But that was the beginning, meaning that my learning experience wasn't going to end there.
