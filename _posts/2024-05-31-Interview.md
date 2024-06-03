@@ -31,6 +31,7 @@ Overall, this has been a great journey and I believe that this overall has got m
 <img src="{{ site.baseurl }}/images/NATM1.png" width=250px/>
 <img src="{{ site.baseurl }}/images/NATM2.png" width=250px/>
 <img src="{{ site.baseurl }}/images/Me.png" width=250px/>
+- These were fun presenting. At that time, I was able to demonstrate my features really well to others and they really enjoyed it. They all gave me excellent feedback.
 
 ## Leadership: Boy Scouts and Chess Club
 While knowing how to program and full stack program is cool, being a good leader is also crucial. As scout from Boy Scout Troop 685 and President of the Del Norte Chess Club, I started to grasp a sophisticated understanding of how to be an effective leader:
@@ -81,6 +82,9 @@ In addition to full-stack projects and leadership, lets not forget about my algo
 - Skills learned: algorithms (graphs, binary search trees, complete search, sorting), concepts (bit flickering, computer number systems, assembly language, stacks and queues, heaps, LISP, FSAs), team collaboration via the digital electronics and ACSL Mock (since another leadership member helped with it)
 
 - Helps introduce new students to computer science and its applications considering that there are many applications to more than just plain old stacks and queues for calculators or sorting; for instance, graphs can be used to help find the longest or shortest path to a certain location and computer number systems can be useful for cryptography - which is useful for and such and web exploitation is helpful for understanding how to determine whether websites are vulnerable to various attacks like command injections, Cross site scripting, and cross site forgery.
+
+## Additional Info:
+- Participated in Greater Regional Science Fair; I presented in front of the judges about how our methods for scanning various parts of the brain works using MRI. We got 2nd Award.
 
 ## Conclusion:
 Once again: As a Senior Patrol Leader of Troop 685, President of the Del Norte Chess Club, Vice President of the Del Norte Coding Club and CTF Club, a team member of Scrum Teams working on various projects (i.e Project Pluto, Jinder, and Nighthawk Resources), National Cyber Scholar with Honors, ACSL Finalist, I believe that I am a qualified candidate for this internship. While I may have made some mistakes in the past, I wouldn't be the person I am right now without them. As Mark Zuckerburg once said, "The greatest success comes from the freedom to fail." While I may have many failed attempts on my features or win many competitions, I always come back with a success. As someone who learned the valueable skills from my experience - especially the mistakes I have made there -  I am someone who is valuable to participate in this internship and ensure these students learn from my mentorship, learn from the mistakes I made, and become the future generation of programmers that the world needs soon. If I get in, I promise to make this happen. :D
