@@ -33,6 +33,7 @@ Overall, this has been a great journey and I believe that this overall has got m
 
 - These were fun presenting. At that time, I was able to demonstrate my features really well to others and they really enjoyed it. They all gave me excellent feedback.
 
+
 ## Leadership: Boy Scouts and Chess Club
 While knowing how to program and full stack program is cool, being a good leader is also crucial. As scout from Boy Scout Troop 685 and President of the Del Norte Chess Club, I started to grasp a sophisticated understanding of how to be an effective leader:
 - First time, not many friends initially but made more friends. I was learning new skills like how to tie a square knot and how to teach how to tie a square knot. This one teaching method (or a formula) is what it is infamously called EDGE (Explain, Demonstrate, Guide, Enable). I was initially gonna quit for a few times, but I never gave up
@@ -88,7 +89,13 @@ In addition to full-stack projects and leadership, lets not forget about my algo
 ## Additional Info:
 - Participated in Greater Regional Science Fair; I presented in front of the judges about how our methods for scanning various parts of the brain works using MRI. We got 2nd Award.
 <img src="{{ site.baseurl }}/images/Analysis of brain.png" width=250px/>
+<img src="{{ site.baseurl }}/images/ROIs.png" width=250px/>
 <img src="{{ site.baseurl }}/images/FWWPF.png" width=250px/>
+
+- Unit 9 Inheritance Lesson: 
+<img src="{{ site.baseurl }}/images/unit9.png" width=250px/>
+
+- [AP Prep](https://github.com/DasMoge124/BOBBY/issues/3)
 
 ## Conclusion:
 Once again: As a Senior Patrol Leader of Troop 685, President of the Del Norte Chess Club, Vice President of the Del Norte Coding Club and CTF Club, a team member of Scrum Teams working on various projects (i.e Project Pluto, Jinder, and Nighthawk Resources), National Cyber Scholar with Honors, ACSL Finalist, I believe that I am a qualified candidate for this internship. While I may have made some mistakes in the past, I wouldn't be the person I am right now without them. As Mark Zuckerburg once said, "The greatest success comes from the freedom to fail." While I may have many failed attempts on my features or win many competitions, I always come back with a success. As someone who learned the valueable skills from my experience - especially the mistakes I have made there -  I am someone who is valuable to participate in this internship and ensure these students learn from my mentorship, learn from the mistakes I made, and become the future generation of programmers that the world needs soon. If I get in, I promise to make this happen. :D
