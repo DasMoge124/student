@@ -18,19 +18,19 @@ courses: {'csse': {'week': 1}, 'csp': {'week': 1, 'categories': ['4.A']}, 'csa':
 #### Topics in order: Full Stack Projects, Boy Scouts & Del Norte Chess Club, Del Norte Algorithmic Coding Club & Del Norte CTF Club
 
 ## Full-Stack Coding Projects:
-Full-stack projects require more than just knowing coding and data structures; it also requires teamwork, leadership, and 
+Full-stack projects require more than just knowing coding and data structures; it also requires teamwork, leadership, and effective collaboration.
 Of course I wasn't the best student considering I was the only few who skipped to AP CSA and I was sometimes clueless. But that didn't prevent me from my devotion to developing the skills needed to be a successful developer in projects like the ones I worked on. Lets start from the beginning:
 - In the very beginning, I was stressed and I wasn't too familiar with how to connect the frontend and backend. I did have to look up to my team members who were more experienced in these kinds of operations.  At least in Tri 1, I was having a hard time to understand everything. But that was the beginning, meaning that my learning experience wasn't going to end there.
 - As Trimester 2 started, I was strenghtening my knowledge in how frontend and backend operates, even though I was still struggling a few times. In the AVK Mini Project, I managed to connect the frontend and backend together. I managed to create fibonacci art pieces with the assistance of algorithms (like binet's formula) in the backend and granted users the ability to download these art pieces which they can use in scenarios, like decorating their profile page. This demonstrates my development in my understanding for frontend-backend connections given the struggles I went through. Consequently, if I hadn't managed to work my way through solving such issues, this wouldn't allow me to progress into the next pages of my journey.
 - In the middle of Trimester 2, I started to have a nuanced understanding of how frontend-backend connections work. That time, I was working with my team and we started to develop our project based on job finding - which we called JINDER. We were started off small, but after communicating with my team effectively as the scrum master, I managed get my team to having great features, like worker finding feature (aka a Worker Hiring SySTEM; i dont know why its named that), interview page, and a job finding feature. Worker finding feature consisted of using KNN - a machine learning technique, which helps find the most relevant worker based on what the user needs. I feel like I have improved a lot as not only as a learner but also as a leader considering my work as a scrum master to make sure tasks were complete on a frequent basis and my efforts on my feature. My favorite feature: [Link](https://rik-csa.github.io/RIK-CSA-frontend/FindEmployees/)
-- In the trimester 3, I was bombarded with the 2-trimester project meaning I was jumped into a completely new project I wasn't too familiar with. At that time, I was trying to use my feature of KNN into that project and its use was minimal. But luckily, I was able to create the undo and redo method that actually uses stacks and queues in the backend (I finally got it to work). Probably not the best trimester of all, but at least I got to **learn** how Stacks and Queues can be applied AND how they can be utilized properly IN THE BACKEND. (It's about the learning; I HATE AP EXAMS I HAD 6 OF THEM)
+- In the trimester 3, I was bombarded with the 2-trimester project meaning I was jumped into a completely new project I wasn't too familiar with. At that time, I was trying to use my feature of KNN into that project and its use was minimal. But luckily, I was able to create the undo and redo method that actually uses stacks and queues in the backend (I finally got it to work). Probably not the best trimester of all, but at least I got to **learn** how Stacks and Queues can be applied AND how they can be utilized properly IN THE BACKEND. (It's about the learning)
 Overall, this has been a great journey and I believe that this overall has got me to learn various techniques that I believe can allow me to apply in the near future. This can lay me the foundation helping me introduce new students to comoputer science and its applications. 
-
 **Favorite Memories from Night at the Museum:**
 
 <img src="{{ site.baseurl }}/images/NATM1.png" width=250px/>
 <img src="{{ site.baseurl }}/images/NATM2.png" width=250px/>
 <img src="{{ site.baseurl }}/images/Me.png" width=250px/>
+
 - These were fun presenting. At that time, I was able to demonstrate my features really well to others and they really enjoyed it. They all gave me excellent feedback.
 
 ## Leadership: Boy Scouts and Chess Club
@@ -79,12 +79,16 @@ In addition to full-stack projects and leadership, lets not forget about my algo
 <img src="{{ site.baseurl }}/images/mock2.png" width=250px/>
 <img src="{{ site.baseurl }}/images/mock3.png" width=250px/>
 
+
 - Skills learned: algorithms (graphs, binary search trees, complete search, sorting), concepts (bit flickering, computer number systems, assembly language, stacks and queues, heaps, LISP, FSAs), team collaboration via the digital electronics and ACSL Mock (since another leadership member helped with it)
 
-- Helps introduce new students to computer science and its applications considering that there are many applications to more than just plain old stacks and queues for calculators or sorting; for instance, graphs can be used to help find the longest or shortest path to a certain location and computer number systems can be useful for cryptography - which is useful for and such and web exploitation is helpful for understanding how to determine whether websites are vulnerable to various attacks like command injections, Cross site scripting, and cross site forgery.
+- Helps introduce new students to computer science and its applications considering that there are many applications to more than just plain old stacks and queues for calculators or sorting; for instance, graphs can be used to help find the longest or shortest path to a certain location and computer number systems can be useful for cryptography - which is useful for and such and web exploitation is helpful for understanding how to determine whether websites are vulnerable to various attacks like command injections, Cross site scripting, and cross site forgery. 
+- Experience in slides --> understanding in how to demonstrate to students on CS topics with the use of slides.
 
 ## Additional Info:
 - Participated in Greater Regional Science Fair; I presented in front of the judges about how our methods for scanning various parts of the brain works using MRI. We got 2nd Award.
+<img src="{{ site.baseurl }}/images/Analysis of brain.png" width=250px/>
+<img src="{{ site.baseurl }}/images/FWWPF.png" width=250px/>
 
 ## Conclusion:
 Once again: As a Senior Patrol Leader of Troop 685, President of the Del Norte Chess Club, Vice President of the Del Norte Coding Club and CTF Club, a team member of Scrum Teams working on various projects (i.e Project Pluto, Jinder, and Nighthawk Resources), National Cyber Scholar with Honors, ACSL Finalist, I believe that I am a qualified candidate for this internship. While I may have made some mistakes in the past, I wouldn't be the person I am right now without them. As Mark Zuckerburg once said, "The greatest success comes from the freedom to fail." While I may have many failed attempts on my features or win many competitions, I always come back with a success. As someone who learned the valueable skills from my experience - especially the mistakes I have made there -  I am someone who is valuable to participate in this internship and ensure these students learn from my mentorship, learn from the mistakes I made, and become the future generation of programmers that the world needs soon. If I get in, I promise to make this happen. :D
