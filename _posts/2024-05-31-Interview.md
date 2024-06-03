@@ -93,6 +93,7 @@ In addition to full-stack projects and leadership, lets not forget about my algo
 <img src="{{ site.baseurl }}/images/FWWPF.png" width=250px/>
 
 - Unit 9 Inheritance Lesson: 
+
 <img src="{{ site.baseurl }}/images/unit9.png" width=250px/>
 
 - [AP Prep](https://github.com/DasMoge124/BOBBY/issues/3)
