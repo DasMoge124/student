@@ -18,7 +18,7 @@ courses: {'csse': {'week': 1}, 'csp': {'week': 1, 'categories': ['4.A']}, 'csa':
 #### Topics in order: Full Stack Projects, Boy Scouts & Del Norte Chess Club, Del Norte Algorithmic Coding Club & Del Norte CTF Club
 
 ## Full-Stack Coding Projects:
-<img src="{{ site.baseurl }}/images/jinder.png" width=250px/>
+<img src="{{ site.baseurl }}/images/jinder.png" width=500px/>
 
 Full-stack projects require more than just knowing coding and data structures; it also requires teamwork, leadership, and effective collaboration.
 Of course I wasn't the best student considering I was the only few who skipped to AP CSA and I was sometimes clueless. But that didn't prevent me from my devotion to developing the skills needed to be a successful developer in projects like the ones I worked on. Lets start from the beginning:
@@ -68,6 +68,8 @@ In addition to full-stack projects and leadership, lets not forget about my algo
 - May: I earned National Cyber Scholar, which granted me access to the National Cyber Academy
 - Later on, I passed the National Cyber Academy and passed the GFACT Exam --> National Cyber Scholar with Honors
 - Skills learned: Computer Hardware systems, Linux, steganography, forensics, Cryptography, Web Exploitation, Binary Exploitation (basic knowledge), Reverse Engineering, Python (for scenarios like cryptography and reverse engineeering), Team collaboration
+
+<img src="{{ site.baseurl }}/images/honor.png" width=250px/>
 
 #### Algorithmic Coding Club
 - First joined, I began to compete in various coding competitions like USACO and ACSL.
