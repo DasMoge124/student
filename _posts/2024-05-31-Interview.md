@@ -17,7 +17,7 @@ courses: {'csse': {'week': 1}, 'csp': {'week': 1, 'categories': ['4.A']}, 'csa':
 
 #### Topics in order: Content Creation, Full Stack Projects, Boy Scouts & Del Norte Chess Club, Del Norte Algorithmic Coding Club & Del Norte CTF Club
 
-# Creating content and courses for the Poway USD Computer Science Pathway:
+## Creating content and courses for the Poway USD Computer Science Pathway:
 - **Creating Content:**
 - Some aspects for content and course creation include making lessons, slideshows, and youtube tutorials 
 
@@ -110,6 +110,8 @@ In addition to full-stack projects, lets not forget about my algorithmic problem
 <img src="{{ site.baseurl }}/images/FWWPF.png" width=250px/>
 
 - It was a fun experience, I learned a lot and that was when I started to develop my passion for helping others considering the judges' perspectives.
+- **Application to Internship:**
+- Introduce collaboration skills that are necessary in college and career --> Collaborating/presenting to judges is similar to collaborating/presenting to your boss and such. These students will need some skills related to the skills I used in that experience.
 
 
 ## Leadership: Boy Scouts and Chess Club
@@ -128,7 +130,7 @@ While knowing how to program and full stack program is cool, being a good leader
 
 <img src="{{ site.baseurl }}/images/chess.png" width=250px/>
 
-All of this demonstrates the necessary leadership skills I'd eventually use during the internship. Boy scouts taught me how to be an effective leader and chess club president taught me how to be an effective team collaborator. This in turn would then be used to help introduce new students to computer science and its applications introduce collaboration skills that are necessary in college and career as the skills.
+All of this demonstrates the necessary leadership skills I'd eventually use during the internship. Boy scouts and chess club president taught me how to be an effective leader and how to be an effective team collaborator. These would be considered valuable collaboration skills that are necessary in college and career.
 
 ## Conclusion:
 Once again: As a Senior Patrol Leader of Troop 685, President of the Del Norte Chess Club, Vice President of the Del Norte Coding Club and CTF Club, a team member of Scrum Teams working on various projects (i.e Project Pluto, Jinder, and Nighthawk Resources), National Cyber Scholar with Honors, ACSL Finalist, I believe that I am a qualified candidate for this internship. While I may have made some mistakes in the past, I wouldn't be the person I am right now without them. As Mark Zuckerburg once said, "The greatest success comes from the freedom to fail." While I may have many failed attempts on my features or win many competitions, I always come back with a success. As someone who learned the valueable skills from my experience - especially the mistakes I have made there -  I am someone who is valuable to participate in this internship and ensure these students learn from my mentorship, learn from the mistakes I made, and become the future generation of programmers that the world needs soon. If I get in, I promise to make this happen. :D
